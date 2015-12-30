@@ -18,7 +18,7 @@ angular.module('create', [])
   // Create Challenge - Triggered when 'create challenge' button is clicked
   $scope.createChallenge = function() {
     var data = {
-      segmentId: $scope.segment.id,
+      segmentId: $scope.segment._id,
       segmentName: $scope.segment.name,
       challengerId: $scope.userId,
       challengerName: $scope.userName,

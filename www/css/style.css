@@ -7,8 +7,16 @@
   text-align: center;
 }
 
-.login-background{
+.login-background {
   background: url('../img/LoginBackground.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.detail-background {
+  background: url('../img/BestridaSegmentDetail.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,7 +49,6 @@
 }
 
 .challenge-result-header {
-    border: 1px solid #A9A9A9;
     padding: 20px; 
 }
 
@@ -61,8 +68,11 @@
 }
 
 .pending-detail-header {
-    border: 1px solid #A9A9A9;
     padding: 20px; 
+}
+
+.pending-detail-button {
+    padding-top: 80px; 
 }
 
 .challenge-stats-table-data {
@@ -71,6 +81,17 @@
   text-align: center;
   padding-top: 2.5px; 
   padding-right: 20px; 
-  padding-bottom: 2.5px; 
+  padding-bottom: 20px; 
   padding-left: 5px; 
+}
+.detail-header {
+  color:#fff;
+  font-size: 24px;
+}
+.detail-text {
+  color:#fff;
+  font-size: 16px;
+}
+.scroll-content {
+   background-color: #444;
 }

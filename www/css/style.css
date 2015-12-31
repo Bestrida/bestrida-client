@@ -92,6 +92,41 @@
   color:#fff;
   font-size: 16px;
 }
+/* header */
+.bar.bar-dark {
+    background-color: #2B2B2B;
+    color: #CCCCCC;
+}
+.bar.bar-dark .title {
+    background-color: #2B2B2B;
+    color: #CCCCCC;
+}
+a.tab-item,.tabs-color-active-assertive, span.tab-title {
+  background-color: #191919;
+  color: #CCCCCC;
+}
+/*Date Title*/
+.input-label {
+  color: #CCCCCC;
+}
+.item-complex .item-content{
+    background-color: #383838;
+    border-color: #383838;
+    color: #CCCCCC;
+    margin: 10px 0;
+}
+.item:nth-child(2n+1) {
+  background-color: #2B2B2B;
+}
+.item:first-child {
+  background-color: #2B2B2B;
+}
+.item{
+    background-color: #383838;
+    border-color: #383838;
+    color: #CCCCCC;
+}
 .scroll-content {
-   background-color: #444;
+   background-color: #2B2B2B;
+   color: #fff;
 }

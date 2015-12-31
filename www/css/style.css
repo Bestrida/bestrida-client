@@ -108,22 +108,29 @@ a.tab-item,.tabs-color-active-assertive, span.tab-title {
 .input-label {
   color: #CCCCCC;
 }
-.item-complex .item-content{
+.item-complex .item-content {
     background-color: #383838;
     border-color: #383838;
-    color: #CCCCCC;
+    /*color: #CCCCCC;*/
     margin: 10px 0;
 }
 .item:nth-child(2n+1) {
   background-color: #2B2B2B;
 }
+.item:last-child {
+  margin: 0;
+}
 .item:first-child {
   background-color: #2B2B2B;
 }
-.item{
-    background-color: #383838;
-    border-color: #383838;
-    color: #CCCCCC;
+.item {
+  background-color: #383838;
+  border-color: #383838;
+  color: #CCCCCC;
+}
+
+.item p {
+  color: #CCCCCC;
 }
 .scroll-content {
    background-color: #2B2B2B;

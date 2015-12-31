@@ -4,15 +4,12 @@
     </ion-refresher>
 
     <!-- Create challenge button -->
-    <a href="#/tab/create-challenge" class="button button-block button-assertive">
-      Create Challenge
+    <a href="#/tab/create-challenge" class="button button-block button-outline button-assertive">
+      <strong>Create Challenge</strong>
     </a>
 
-    <!-- Challenge feed with list items -->
-    <!-- href="#/tab/pending-detail/:challengeId" -->
-
-    <ion-list>
-      <ion-item class="item-thumbnail-left" ng-repeat="challenge in challenges" href="#/tab/pending-detail/{{challenge._id}}">
+    <ion-list class="list-content">
+      <ion-item class="item item-thumbnail-left" ng-repeat="challenge in challenges" href="#/tab/pending-detail/{{challenge._id}}">
         <img ng-src="{{photo[challenge.challengerId] || photo[challenge.challengeeId]}}">
         <p>Opponent: {{challenge.opponent}}</p>
         <p>Segment: {{challenge.segmentName}}</p>

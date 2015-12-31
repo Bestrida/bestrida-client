@@ -27,13 +27,13 @@
         <div class="item item-divider">Select a Completion Date</div>
         <label class="item item-input">
           <span class="input-label">Date</span>
-          <input type="date" ng-model="date" required />
+          <input style="color: #CCCCCC" type="date" ng-model="date" required />
         </label>
       </div>
       
       <br>
 
-      <a class="button button-block button-assertive" ng-disabled="!(segment.name && challenger.fullName && date)" ng-click="createChallenge()" href="#/tab/active-challenges" >Create Challenge</a>
+      <a class="button button-block button-outline button-assertive" ng-disabled="!(segment.name && challenger.fullName && date)" ng-click="createChallenge()" href="#/tab/active-challenges" >Create Challenge</a>
      
     </div>
 

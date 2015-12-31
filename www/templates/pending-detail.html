@@ -4,14 +4,14 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="Pending Detail">
-  <ion-content class="padding">
+<ion-view view-title="Pending Detail" class="detail-background">
+  <ion-content class="padding detail-text detail-background">
   
     <div class="center-align">
       
       <div class="pending-detail-header">
-        <h3 class="center-text">
-          Segment Name - {{segmentName}}
+        <h3 class="center-text detail-header">
+          {{segmentName}}
         </h3>
       </div>
 
@@ -41,37 +41,37 @@
       
       <!-- Time -->
       <tr>
-        <td><b>Distance - </b></td>
+        <td><b>Distance</b></td>
         <td class="challenge-stats-table-data">{{distanceInMiles | number: 2}} miles</td>
       </tr>
 
       <!-- Location -->
       <tr>
-        <td><b>Location - </b></td>
+        <td><b>Location</b></td>
         <td class="challenge-stats-table-data">{{city}}, {{state}}</td>
       </tr>
 
       <!-- Activity Type -->
       <tr>
-        <td><b>Activity Type - </b></td>
+        <td><b>Activity Type</b></td>
         <td class="challenge-stats-table-data">{{activityType}}</td>
       </tr>
 
       <!-- Average Grade -->
       <tr>
-        <td><b>Average Grade - </b></td>
+        <td><b>Average Grade</b></td>
         <td class="challenge-stats-table-data">{{averageGrade}}%</td>
       </tr>
 
        <!-- Climb Category -->
       <tr>
-        <td><b>Climb Category - </b></td>
+        <td><b>Climb Category</b></td>
         <td class="challenge-stats-table-data">{{climbCategory}}</td>
       </tr>
 
       <!-- Total Elevation Gain -->
       <tr>
-        <td><b>Elevation Gain - </b></td>
+        <td><b>Elevation Gain</b></td>
         <td class="challenge-stats-table-data">{{totalElevationGain | number: 0}} meters</td>
       </tr>
       
@@ -80,10 +80,12 @@
     </div>
 
     </div>
-
-    <a class="button button-block button-assertive login-button" href="#/tab/challenge-feed" ng-click="declineChallenge(challenge); challenges.splice($index, 1)">
-      Cancel Challenge
+    <div class="pending-detail-button">
+    <a class="button button-block button-outline button-assertive" href="#/tab/challenge-feed" ng-click="declineChallenge(challenge); challenges.splice($index, 1)">
+      <strong>Cancel Challenge</strong>
     </a>
+    </div>
+    
 
   </ion-content>
 </ion-view>

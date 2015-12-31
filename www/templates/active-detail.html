@@ -5,36 +5,15 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="Active Detail">
-  <ion-content class="padding">
+  <ion-content class="padding detail-text detail-background">
   
     <div class="center-align">
 
       <div class="pending-detail-header">
-        <h3 class="center-text">
-          Segment Name - {{segmentName}}
+        <h3 class="center-text detail-header">
+          {{segmentName}}
         </h3>
       </div>
-
-     <!--  <h4 class="center-text">
-        Distance - {{distanceInMiles | number: 2}} miles
-      </h4>
-
-      <h4 class="center-text">
-        Location - {{city}}, {{state}}
-      </h4>
-
-      <h4 class="center-text">
-        Activity Type - {{activityType}}
-      </h4>
-
-      <h4 class="center-text">
-        Average Grade - {{averageGrade}}
-      </h4>
-
-      <h4 class="center-text">
-        Climb Category - {{climbCategory}}
-      </h4> -->
-
     
     <div class="col center-align">
 
@@ -42,37 +21,37 @@
       
       <!-- Time -->
       <tr>
-        <td><b>Distance - </b></td>
+        <td><b>Distance</b></td>
         <td class="challenge-stats-table-data">{{distanceInMiles | number: 2}} miles</td>
       </tr>
 
       <!-- Location -->
       <tr>
-        <td><b>Location - </b></td>
+        <td><b>Location</b></td>
         <td class="challenge-stats-table-data">{{city}}, {{state}}</td>
       </tr>
 
       <!-- Activity Type -->
       <tr>
-        <td><b>Activity Type - </b></td>
+        <td><b>Activity Type</b></td>
         <td class="challenge-stats-table-data">{{activityType}}</td>
       </tr>
 
       <!-- Average Grade -->
       <tr>
-        <td><b>Average Grade - </b></td>
+        <td><b>Average Grade</b></td>
         <td class="challenge-stats-table-data">{{averageGrade}}%</td>
       </tr>
 
        <!-- Climb Category -->
       <tr>
-        <td><b>Climb Category - </b></td>
+        <td><b>Climb Category</b></td>
         <td class="challenge-stats-table-data">{{climbCategory}}</td>
       </tr>
 
       <!-- Total Elevation Gain -->
       <tr>
-        <td><b>Elevation Gain - </b></td>
+        <td><b>Elevation Gain</b></td>
         <td class="challenge-stats-table-data">{{totalElevationGain | number: 0}} meters</td>
       </tr>
       

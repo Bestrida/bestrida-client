@@ -5,12 +5,12 @@
   The Friends service returns an array of friend data
 -->
 
-<ion-view view-title="Challenge Stats">
-  <ion-content class="padding">
+<ion-view view-title="Challenge Stats" class="detail-background">
+  <ion-content class="padding detail-text detail-background">
     
     <!-- Do not display challenge if it is incomplete -->
     <div ng-show="!challengeStatus">
-      <h1 class="center-text">This challenge is not yet complete!</h1>
+      <h1 class="center-text detail-header">This challenge is not yet complete!</h1>
     </div>
 
     <!-- Display challenge if it is complete -->
@@ -19,21 +19,21 @@
     <!-- Result -->
       <div class="row">
         <div class="col.col-100 center-align">
-          <h1>You {{challengeResult}}!</h1>
+          <h1 class="detail-header">You {{challengeResult}}!</h1>
         </div>
       </div>
 
       <!-- Segment - name -->
       <div class="row">
         <div class="col.col-100 center-align">
-          <h3>{{segment}}</h3>
+          <h3 class="detail-header">{{segment}}</h3>
         </div>
       </div>
 
       <!-- Segment - name -->
       <div class="row">
         <div class="col.col-100 center-align">
-          <h3>{{distance | number: 2}} Miles</h3>
+          <h3 class="detail-header">{{distance | number: 2}} Miles</h3>
         </div>
       </div>
     </div>
@@ -41,10 +41,10 @@
       <!-- Opponents -->
       <div class="row">
         <div class="col">
-          <h3 class="center-text">{{userName}}</h3>
+          <h3 class="center-text detail-text"><strong>{{userName}}</strong></h3>
         </div>
         <div class="col">
-          <h3 class="center-text">{{opponent}}</h3>
+          <h3 class="center-text detail-text"><strong>{{opponent}}</strong></h3>
         </div>
       </div>
 

@@ -4,7 +4,7 @@
   <description>
     A Strava.com based application to challenge your athlete friends with running and cycling workout activities
   </description>
-  <author email="bestrida.hrr9@gmail.com" href="http://www.bestrida.co/">
+  <author email="bestrida.hrr9@gmail.com" href="http://bestrida.herokuapp.com">
       Bestrida Team
   </author>
   <content src="index.html"/>
@@ -22,7 +22,7 @@
   <feature name="InAppBrowser">
     <param name="ios-package" value="CDVInAppBrowser"/>
   </feature>
-  <allow-navigation href="http://bestrida.co/api/register"/>
+  <allow-navigation href="http://bestrida.herokuapp.com/api/register"/>
   <platform name="ios">
     <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
     <icon src="resources/ios/icon/icon@2x.png" width="114" height="114"/>

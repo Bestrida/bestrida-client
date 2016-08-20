@@ -11,6 +11,7 @@ angular.module('create', [])
   CreateFct.getUser($scope.userId)
     .success(function(data) {
       $scope.userName = data.fullName;
+      $scope.userPhoto = data.photo;
       $scope.challengers = data.friends;
       $scope.segments = data.segments;
     });
@@ -22,8 +23,10 @@ angular.module('create', [])
       segmentName: $scope.segment.name,
       challengerId: $scope.userId,
       challengerName: $scope.userName,
+      challengerPhoto: $scope.userPhoto,
       challengeeId: $scope.challenger.id,
       challengeeName: $scope.challenger.fullName,
+      challengeePhoto: $scope.challenger.photo,
       completionDate: $scope.date
     };
     CreateFct.createChallenge(data);
@@ -67,7 +70,7 @@ angular.module('create', [])
             +'<li class="item" ng-click="select(item)" ng-repeat="item in provider | limitTo:3">{{item[labelField]}}</li>'
           +'</ul>'
       +'</div>'
-      // Template that is displayed when input field is typed in 
+      // Template that is displayed when input field is typed in
       +'<div class="optionList" ng-show="showHide">'
           +'<ul class="list">'
             +'<li class="item" ng-click="select(item)" ng-repeat="item in provider | filter:ngModel">{{item[labelField]}}</li>'
@@ -82,19 +85,19 @@ angular.module('create', [])
         scope.showHide = false;
         scope.showHides = true;
       };
-            
+
       element.bind('click',function(){
         element.find('input').triggerHandler('focus');
       });
-            
+
       scope.open = function(){
         // NOTE: investigate what scope.ngModel is used for here - it is unclear
         scope.showHide = false;
-        scope.ngModel = "";  
+        scope.ngModel = "";
         return scope.showHides=!scope.showHides;
         // return scope.showHide=!scope.showHide;
       };
-            
+
       scope.onKeyDown = function(){
         scope.showHides = true;
         scope.showHide = true;
@@ -102,7 +105,7 @@ angular.module('create', [])
           scope.showHide = false;
         }
       };
-            
+
       scope.$watch('ngModel',function(newValue){
         if(newValue)
       element.find('input').val(newValue[scope.labelField]);
